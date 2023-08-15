@@ -1,0 +1,160 @@
+ *,html {
+    box-shadow: none;
+    margin: 0;
+ }
+ html,body{
+    width: 100%;
+    height: 100%;
+  
+ }
+
+ #content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url(/dist/image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+ }
+
+
+ .header{
+   color: azure;
+    background-color: rgba(47, 44, 44,0.6);
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.header > h1{
+    font-size: 50px;
+}
+
+ .navbar{
+    display: flex;
+    font-size: 30px;
+    gap: 30px;
+
+}
+
+.navbar > div:hover{
+   transform: translateY(-10%);
+}
+
+.navbar > div {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.active{
+   border-bottom: 2px solid azure;
+}
+
+ .middle{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+.home{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   animation: fadeIn 1.5s;
+}
+.home > img{
+      width: 200px;
+      height: 200px;
+      border-radius: 50px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+}
+
+.home > p {
+   padding: 1rem;
+   font-size: x-large;
+   color: azure;
+}
+
+.container-menu{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 1rem;
+   animation: fadeIn 1.5s;
+}
+
+
+.cardbox{
+   background-color: rgb(45, 45, 45);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid black;
+}
+
+.cardbox > img {
+   width: 100px;
+   height: 100px;
+}
+
+
+ .container-home, .container-menu, .container-contact{
+   border: 2px solid rgb(53, 52, 52);
+   color: azure;
+   padding: 50px;
+    width: 50%;
+    height: 60%;
+    background-color: rgba(47, 44, 44,0.6);
+ }
+
+ .container-menu,.container-contact{
+   display: none;
+ }
+
+ .container-contact{
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+
+.container-contact > img{
+   width: 80%;
+   height: 80%;
+   padding: 10px
+}
+
+.container-contact > p{
+   font-size: x-large;
+   padding: 5px;
+}
+
+ .footer{
+   color: azure;
+    background-color: rgba(47, 44, 44,0.6);
+    height: 3%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@keyframes fadeIn {
+   0% {
+     opacity: 0;
+   }
+ 
+   100% {
+     opacity: 1;
+   }
+ }
